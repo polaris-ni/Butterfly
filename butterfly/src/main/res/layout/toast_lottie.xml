@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_toast_white"
+    android:backgroundTint="#87CEFA"
+    android:gravity="center_vertical"
+    android:minWidth="200dp"
+    android:orientation="horizontal">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/success" />
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="11dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_toast_white" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:maxLength="18"
+        tools:text="土司测试多行土司测试多行土司测试多行土司测试多行" />
+
+
+</LinearLayout>
